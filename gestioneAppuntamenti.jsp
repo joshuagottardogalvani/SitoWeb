@@ -12,7 +12,7 @@
 </head>
    
 <body>
-   
+
    <% String vuoto = "";
    String cognome = request.getParameter("cognome");
    if (cognome.equals(vuoto)) { %>
