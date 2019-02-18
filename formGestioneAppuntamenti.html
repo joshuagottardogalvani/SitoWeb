@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+  <title>Gestione Appuntamenti</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+  <style>
+     html {
+         font-family: 'Montserrat', 'sans-serif';
+     }
+     
+     .d-in-block {
+         display: inline-block;
+     }
+    </style>
+</head>
+ 
+<body>
+    <form method="get" action="gestioneAppuntamenti.jsp">
+        <fieldset>
+            <p>Cognome:</p>
+            <input type="text" name="cognome"/>
+            <br>
+            <p>Classe:</p>
+            <select name="classe">
+            <option hidden disabled selected value> -- seleziona una classe -- </option>
+            <option value="1E INF">1E INF</option>
+            <option value="2E INF">2E INF</option>
+            <option value="3E INF">3E INF</option>
+            <option value="4E INF">4E INF</option>
+            <option value="5E INF">5E INF</option>
+            </select>
+            <br>
+            <p class="d-in-block">Vuoi visualizzare i compiti in classe svolti?</p>
+            <input type="radio" name="compiti" value="yes" checked> Sì
+            <input type="radio" name="compiti" value="no"> No
+            <p>Seleziona i professori con cui vuole avere un colloquio</p>
+            <input type="checkbox" name="Giraldi Laura" value="yes">Giraldi Laura
+            <input type="checkbox" name="Titze Walter" value="yes">Titze Walter
+            <input type="checkbox" name="Spadoni Riccardo" value="yes">Spadoni Riccardo
+            <input type="checkbox" name="Capozzi Giuseppe" value="yes">Capozzi Giuseppe
+            <input type="checkbox" name="Carrara Maria Grazia" value="yes">Carrara Maria Grazia
+            <input type="checkbox" name="Malizia Fabio" value="yes">Malizia Fabio
+            <input type="checkbox" name="Apicella Annalisa" value="yes">Apicella Annalisa
+            <input type="checkbox" name="Bellocco Paola" value="yes">Bellocco Paola
+            <input type="checkbox" name="Arcostanzo Piero" value="yes">Arcostanzo Piero
+        </fieldset>
+        <input type="submit" value="Invia"/>
+    </form>
+</body>
+</html>
